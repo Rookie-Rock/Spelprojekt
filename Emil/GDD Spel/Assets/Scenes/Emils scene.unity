@@ -229,7 +229,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02c5889e293209b428c34d2d4b43e236, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healAmount: 20
 --- !u!114 &376991135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,6 +239,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c332346d3b30ed04da8c6c653b7464e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &376991136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376991130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e5d18a008e6864296767c4a2e7d467, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &378787503
@@ -1114,7 +1125,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 11baf9054d90c9b42a631fa647953944, type: 3}
       propertyPath: m_TagString
-      value: Medkit
+      value: healthpickup
       objectReference: {fileID: 0}
     - target: {fileID: 3427415958241247585, guid: 11baf9054d90c9b42a631fa647953944, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2082,6 +2093,8 @@ GameObject:
   - component: {fileID: 1613588467}
   - component: {fileID: 1613588466}
   - component: {fileID: 1613588469}
+  - component: {fileID: 1613588470}
+  - component: {fileID: 1613588471}
   m_Layer: 0
   m_Name: Player
   m_TagString: Mark
@@ -2180,8 +2193,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61d95c74a280583439e407094e2c8ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
-  currentHealth: 100
+--- !u!114 &1613588470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613588464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3018be28697d70a4fb0f45f0f7eae870, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1613588471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613588464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 419ff44dbbdc634408ccc7000bd9864d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1785479432
 GameObject:
   m_ObjectHideFlags: 0
@@ -2636,6 +2671,7 @@ GameObject:
   - component: {fileID: 2050443495}
   - component: {fileID: 2050443494}
   - component: {fileID: 2050443496}
+  - component: {fileID: 2050443497}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -2770,6 +2806,18 @@ MonoBehaviour:
   slider: {fileID: 2050443495}
   takeDamage: 20
   heal: 5
+--- !u!114 &2050443497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050443492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aca69b945d9c1245916a2d1b47efac6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2054691038
 GameObject:
   m_ObjectHideFlags: 0
