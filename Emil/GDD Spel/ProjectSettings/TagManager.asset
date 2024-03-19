@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Mark
   - Medkit
+  - HealthPickup
+  - healthpickup
   layers:
   - Default
   - TransparentFX
